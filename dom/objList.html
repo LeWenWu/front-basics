@@ -1,0 +1,70 @@
+<!doctype HTML>
+<html>
+
+<head>
+    <title>Document 对象集合</title>
+</head>
+
+<body>
+    <h1>Hello World</h1>
+    <h1>Hello World2</h1>
+    <div id="user">The name is xiaoming.</div>
+    <div name="no">The no is 1.</div>
+    <div name="no">The no is 2.</div>
+    <p>This is the p target</p>
+    <p>This is the p target too.</p>
+
+    <a name="first">First anchor</a><br />
+    <a name="second">Second anchor</a><br />
+    <a name="third">Third anchor</a><br />
+
+    <br/>
+    <form id="userForm" name="Form1">
+        userName:<input type="text">
+    </form>
+    <form name="Form2">
+        userName:<input type="text">
+    </form>
+    <form name="Form3">
+        userName:<input type="text">
+    </form>
+
+    <img src="../images/life.jpg" />
+    <br />
+    <img src="../images/life.jpg" />
+    <br />
+
+    <a href="#">Link</a>
+    <br />
+    <img src="../images/planets.jpg" border="0" usemap="#planetmap" alt="Planets" />
+    <map name="planetmap" id="planetmap">
+        <area shape="circle" coords="180,139,14" href ="#" target ="_blank" alt="Venus" />
+        <area shape="circle" coords="129,161,10" href ="#" target ="_blank" alt="venus" />
+    </map>
+</body>
+<script>
+    // all[] 提供对文档中所有 HTML 元素的访问.
+    console.log(document.all);
+
+    // Anchor[] 返回对文档中所有 Anchor 对象的引用.
+    console.log(document.anchors);
+    document.write("<br>Number of anchors in this document:" + document.anchors.length);
+    document.write(document.anchors.first.innerHTML);
+
+    // forms[] 返回对文档中所有 Form 对象引用.
+    console.log(document.forms);
+    document.write("<br>Number of forms in this document:" + document.forms.length);
+    document.write("<br>The first form's name is" + document.forms[0].name);
+    document.write("<br>The first form's name is" + document.getElementById("userForm").name);
+
+    // images[] 返回对文档中所有 Image 对象引用.
+    console.log(document.images);
+    document.write("<br>Number of images in this document:" + document.images.length);
+
+    // links[] links 集合可返回对文档中所有 Area 和 Link 对象的引用.
+    console.log(document.links);
+    document.write("<br>Number of links in this document:" + document.links.length);
+
+</script>
+
+</html>
