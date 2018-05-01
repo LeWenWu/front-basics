@@ -1,0 +1,40 @@
+<!doctype HTML>
+<html>
+
+<head>
+    <title>Menu and Content</title>
+    <style>
+        html,
+        body {
+            height: 100%;
+        }
+        
+        .layout-box {
+            display: flex;
+            flex-flow: row nowrap;
+            height: 100%;
+        }
+        
+        .layout-item {
+            border: 1px solid #666;
+            height: 100%;
+        }
+        
+        .layout-menu {
+            flex: 0 0 200px;
+        }
+        
+        .layout-content {
+            flex: 1 1 auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="layout-box">
+        <div class="layout-item layout-menu">Menu</div>
+        <div class="layout-item layout-content">content</div>
+    </div>
+</body>
+
+</html>

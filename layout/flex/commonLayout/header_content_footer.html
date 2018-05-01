@@ -1,0 +1,44 @@
+<!doctype HTML>
+<html>
+
+<head>
+    <title>Header, Content and Footer</title>
+    <style>
+        html,
+        body {
+            height: 100%;
+        }
+        
+        .layout-box {
+            display: flex;
+            flex-flow: column nowrap;
+            height: 100%;
+        }
+        
+        .layout-item {
+            border: 1px solid #666;
+        }
+        
+        .layout-header {
+            flex: 0 0 100px;
+        }
+        
+        .layout-content {
+            flex: 1 1 auto;
+        }
+        
+        .layout-footer {
+            flex: 0 0 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="layout-box">
+        <div class="layout-item layout-header">Header</div>
+        <div class="layout-item layout-content">Content</div>
+        <div class="layout-item layout-footer">Footer</div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,54 @@
+<!doctype HTML>
+<html>
+
+<head>
+    <title>盒子模式实现垂直居中</title>
+    <style>
+        html,
+        body {
+            height: 100%;
+        }
+        /*margin:auto实现绝对定位元素的居中*/
+        
+        .box1 {
+            width: 200px;
+            height: 200px;
+            background-color: lightblue;
+            margin: auto;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+        }
+        /*绝对定位 + margin 负间距*/
+        
+        .box2 {
+            width: 200px;
+            height: 200px;
+            background: lightblue;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            margin-left: -100px;
+            margin-top: -100px;
+        }
+        /*利用transform*/
+        
+        .box3 {
+            width: 200px;
+            height: 200px;
+            background: lightblue;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box3">1</div>
+</body>
+
+</html>

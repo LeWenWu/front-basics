@@ -1,0 +1,52 @@
+<!doctype HTML>
+<html>
+
+<head>
+    <title>Header, Menu and Content</title>
+    <style>
+        html,
+        body {
+            height: 100%;
+        }
+        
+        .layout-box {
+            display: flex;
+            flex-flow: column nowrap;
+            height: 100%;
+        }
+        
+        .layout-item {
+            border: 1px solid #666;
+        }
+        
+        .layout-header {
+            flex: 0 0 80px;
+        }
+        
+        .layout-content {
+            flex: 1 1 auto;
+            display: flex;
+            flex-flow: row nowrap;
+        }
+        
+        .layout-menu {
+            flex: 0 0 200px;
+        }
+        
+        .layout-content-body {
+            flex: 1 1 auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="layout-box">
+        <div class="layout-item layout-header">Header</div>
+        <div class="layout-item layout-content">
+            <div class="layout-item layout-menu">Menu</div>
+            <div class="layout-item layout-content-body">content</div>
+        </div>
+    </div>
+</body>
+
+</html>

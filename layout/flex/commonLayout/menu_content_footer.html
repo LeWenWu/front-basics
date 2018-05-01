@@ -1,0 +1,52 @@
+<!doctype HTML>
+<html>
+
+<head>
+    <title>Menu, Content and Footer</title>
+    <style>
+        html,
+        body {
+            height: 100%;
+        }
+        
+        .layout-box {
+            display: flex;
+            flex-flow: column nowrap;
+            height: 100%;
+        }
+        
+        .layout-item {
+            border: 1px solid #666;
+        }
+        
+        .layout-content {
+            flex: 1 1 auto;
+            display: flex;
+            flex-flow: row nowrap;
+        }
+        
+        .layout-menu {
+            flex: 0 0 200px;
+        }
+        
+        .layout-content-body {
+            flex: 1 1 auto;
+        }
+        
+        .layout-footer {
+            flex: 0 0 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="layout-box">
+        <div class="layout-content">
+            <div class="layout-item layout-menu">Menu</div>
+            <div class="layout-item layout-content-body">content</div>
+        </div>
+        <div class="layout-item layout-footer">Footer</div>
+    </div>
+</body>
+
+</html>
